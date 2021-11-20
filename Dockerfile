@@ -9,6 +9,7 @@ COPY package-lock.json /usr/src/app/
 RUN npm install
 COPY . /usr/src/app/
 
+# generate the static build
 RUN npm run build
 
 # production environment
